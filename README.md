@@ -52,11 +52,17 @@ Some operators and aircraft types were disproportionately represented.
 Safety improvements over time significantly reduced fatality counts.
 ## Tools & Libraries Used
 import pandas as pd
+
 import numpy as np
+
 import seaborn as sns
+
 import matplotlib.pyplot as plt
+
 from scipy.stats import zscore
+
 import warnings
+
 warnings.filterwarnings('ignore')
 
 # Air Traffic Passenger Data Analysis
