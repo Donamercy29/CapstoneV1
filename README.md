@@ -1,100 +1,113 @@
-# Capstone Project
-This Project focuses on developing a predictive model by integrating two Datasets (Airplane Crashes and Air Traffic Passenger). The aim is to study the trends and patterns related to Air Travel Safety and passenger growth. The integration of multiple datasets helps enhance prediction accuracy and supports better analysis. 
-# Airplane Crash Analysis (1908–2009)
-## Dataset
-Historical records of airplane crashes from 1908 onwards, including crash location, airline operator, aircraft type, fatalities, and accident summaries.
-## Objective
-Analyze historical aviation accident trends and crash frequencies.
-Identify factors affecting fatalities in crashes.
-Explore how aviation safety improved over time.
-Use statistical analysis and visualization to extract meaningful insights.
-Understand survival probability in aviation accidents.
-## Key Insights & Analysis
-### 1. Exploratory Data Analysis (EDA)
-### Yearly Trends
-Analyzed number of crashes per year.
-Identified peak crash periods (notably early 1970s).
-Examined fatality trends over decades.
+#  Air Traffic & Aviation Analysis (Capstone Project)
 
-### Geographic Distribution
-Identified countries and continents with highest crash occurrences.
-Compared fatality counts by region.
+##  Project Overview
+This project analyzes aviation safety and passenger traffic trends using two datasets:
+- Airplane Crashes Dataset
+- Air Traffic Passenger Dataset
 
-### Airline & Aircraft Impact
-Determined operators with most recorded crashes.
-Analyzed aircraft types involved in high-fatality incidents.
+The project is divided into two phases:
+- Phase 1: Exploratory Data Analysis (EDA)
+- Phase 2: Machine Learning Model Development
 
-### Fatalities & Survival Analysis
-Compared Aboard vs Fatalities.
-Created Fatality Rate feature:
-      Fatality_Rate = Fatalities / Aboard
-Studied severity patterns across years.
-### 2. Statistical & Analytical Approaches
-### Time-Based Analysis
-Year-wise crash frequency trend visualization.
-Studied long-term aviation safety improvements.
+---
 
-### Feature Correlation
-Analyzed relationships between:
-Aboard
-Fatalities
-Ground casualties
+##  Phase 1: Exploratory Data Analysis (EDA)
 
-### Predictive Perspective
-Explored possibility of predicting crash severity using:
-Number of passengers
-Aircraft type
-Operator history
-## Visualizations & Findings
-Crash frequency peaked mid-20th century and declined in recent decades.
-Fatality rate analysis showed many crashes had high severity.
-Some operators and aircraft types were disproportionately represented.
-Safety improvements over time significantly reduced fatality counts.
-## Tools & Libraries Used
-import pandas as pd
+###  Airplane Crash Analysis (1908–2009)
 
-import numpy as np
+#### Objective
+- Analyze historical aviation accident trends
+- Study fatality patterns and safety improvements
+- Identify factors affecting crash severity
 
-import seaborn as sns
+#### Key Insights
+- Crash frequency peaked in the mid-20th century and declined over time  
+- Fatality rates were higher in earlier decades  
+- Significant improvements in aviation safety observed  
+- Certain operators and aircraft types had higher crash frequency  
 
-import matplotlib.pyplot as plt
+---
 
-from scipy.stats import zscore
+###  Air Traffic Passenger Analysis
 
-import warnings
+#### Objective
+- Analyze passenger growth trends
+- Identify seasonal travel patterns
+- Compare domestic vs international traffic
 
-warnings.filterwarnings('ignore')
+#### Key Insights
+- Strong long-term growth in passenger traffic  
+- Peak travel seasons identified (mid-year months)  
+- International and domestic traffic show distinct patterns  
+- Terminal and airline activity varies significantly  
 
-# Air Traffic Passenger Data Analysis
-## Dataset
-Air traffic passenger dataset containing historical passenger volume records across airports, regions, and travel categories (Domestic/International).
-## Objective
-Analyze passenger growth trends over time.
-Identify seasonal travel patterns.
-Compare domestic vs international traffic.
-Prepare dataset for predictive modeling.
-Apply linear regression for passenger forecasting.
-## Key Insights & Analysis
-### 1. Exploratory Data Analysis (EDA)
-### Yearly Passenger Trends
-Studied long-term passenger growth.
-Identified peak growth years.
-### Monthly & Seasonal Patterns
-Analyzed high-traffic months.
-Identified recurring seasonal travel peaks.
-### Regional & Airport Analysis
-Compared passenger traffic across airports.
-Identified busiest regions.
-### Growth Rate Analysis
-Computed year-over-year growth.
-Measured expansion patterns in aviation demand.
-### 2. Statistical Analysis
-Performed trend analysis using yearly aggregation.
-Analyzed passenger growth patterns over time.
-Compared seasonal variations.
-Used correlation analysis to study feature relationships.
-## Visualizations & Findings
-Passenger traffic shows strong long-term growth.
-Seasonal travel peaks observed in specific months.
-Domestic vs international comparison revealed demand distribution differences.
-Regression model captured strong time-based growth trend.
+---
+
+## 🤖 Phase 2: Machine Learning (Prediction Model)
+
+###  Objective
+Build a predictive model to estimate passenger traffic using historical data.
+
+---
+
+###  Models Implemented
+- Linear Regression (OLS)
+- Ridge Regression
+- Lasso Regression
+
+---
+
+###  Techniques Used
+- Data Cleaning & Preprocessing  
+- Feature Engineering (seasonality, interaction features)  
+- Encoding (Frequency + One-Hot Encoding)  
+- Feature Scaling (StandardScaler)  
+- Cross Validation (5-Fold)  
+
+---
+
+###  Model Results
+
+| Model | R² Score | RMSE |
+|------|--------|------|
+| Linear Regression (Baseline) | **0.58** | ~36,900 |
+| Feature Engineered Model | 0.39 | ~44,200 |
+| Ridge / Lasso | Evaluated for regularization |
+
+---
+
+###  Key Observations
+- Baseline model performed better than feature engineered model  
+- Additional features did not significantly improve prediction  
+- Demonstrates importance of meaningful feature selection  
+- Regularization techniques helped control model complexity  
+
+---
+
+##  Tools & Technologies
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- Matplotlib, Seaborn  
+
+---
+
+## 📂 Project Structure
+<img width="977" height="970" alt="image" src="https://github.com/user-attachments/assets/f7c770f7-1230-4347-ad7c-f2d8d1e2e148" />
+---
+
+##  Conclusion
+
+This project demonstrates an **end-to-end data science workflow**, including:
+- Data cleaning and preprocessing  
+- Exploratory data analysis  
+- Feature engineering  
+- Machine learning model development  
+- Model evaluation and optimization  
+
+---
+
+##  Future Improvements
+- Apply advanced models (Random Forest, XGBoost)  
+- Improve feature engineering techniques  
+- Incorporate external datasets for better prediction  
