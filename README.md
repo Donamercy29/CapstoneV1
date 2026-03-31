@@ -93,14 +93,14 @@ Build a predictive model to estimate passenger traffic using historical data.
 ---
 
 ##  Project Structure
-Air-Traffic-Project/
-│
-├── Phase1_Airplane_Analysis.ipynb
-├── Phase1_Passenger_EDA.ipynb
-├── Phase2_ML_Model.ipynb   ← (your ML notebook)
-├── Air_Traffic_Passenger_Statistics.csv
-├── Airplane_Crashes_and_Fatalities.csv
-├── README.md
+Air-Traffic-Project
+
+Phase1_Airplane_Analysis.ipynb
+Phase1_Passenger_EDA.ipynb
+Phase2_ML_Model.ipynb   
+Air_Traffic_Passenger_Statistics.csv
+Airplane_Crashes_and_Fatalities.csv
+README.md
 ---
 
 ##  Conclusion
