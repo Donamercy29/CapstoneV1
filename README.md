@@ -43,7 +43,7 @@ The project is divided into two phases:
 
 ---
 
-## 🤖 Phase 2: Machine Learning (Prediction Model)
+##  Phase 2: Machine Learning (Prediction Model)
 
 ###  Objective
 Build a predictive model to estimate passenger traffic using historical data.
@@ -92,8 +92,15 @@ Build a predictive model to estimate passenger traffic using historical data.
 
 ---
 
-## 📂 Project Structure
-<img width="977" height="970" alt="image" src="https://github.com/user-attachments/assets/f7c770f7-1230-4347-ad7c-f2d8d1e2e148" />
+##  Project Structure
+Air-Traffic-Project/
+│
+├── Phase1_Airplane_Analysis.ipynb
+├── Phase1_Passenger_EDA.ipynb
+├── Phase2_ML_Model.ipynb   ← (your ML notebook)
+├── Air_Traffic_Passenger_Statistics.csv
+├── Airplane_Crashes_and_Fatalities.csv
+├── README.md
 ---
 
 ##  Conclusion
